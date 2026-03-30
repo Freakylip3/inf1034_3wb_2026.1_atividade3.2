@@ -25,6 +25,21 @@ def circulo(x, y, color, raio):
     t.circle(raio)
     t.end_fill()
 
+def triangulo(x, y, lado, angulo, color):
+    t.pu()
+    t.goto(x,y)
+    t.pd()
+    t.begin_fill()
+    t.fillcolor(color)
+    t.rt(angulo)
+    t.fd(lado)
+    t.rt(angulo)
+    t.fd(lado)
+    t.lt(angulo)
+    t.fd(lado)
+    t.setheading(0)
+    t.end_fill()
+
 def desenha_frança():
     retangulo(-300, 300, 150, 250, "#022551")
     retangulo(-150, 300, 150, 250,"white")
@@ -118,6 +133,16 @@ def desenha_EmiArab():
     sleep(2)
     t.clear()
 
+def desenha_Palestina():
+    retangulo(-300, 300, 600, 150, "#01843E")
+    retangulo(-300, 150, 600, 150,"#F7F7F7")
+    retangulo(-300, 0, 600, 150, "#000000")
+    triangulo(-300, 300, 300, 60, "#C8112E")
+    sleep(2)
+    t.clear()
+
+
+desenha_Palestina()
 desenha_EmiArab()
 desenha_niger()
 desenha_frança()
