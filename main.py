@@ -156,4 +156,5 @@ desenha_austria()
 desenha_colombia()
 desenha_hungria()
 desenha_polonia()
+
 mainloop()
