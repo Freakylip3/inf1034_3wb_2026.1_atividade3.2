@@ -48,6 +48,13 @@ def desenha_frança():
     sleep(2)
     t.clear()
 
+def desenha_italia():
+    retangulo(-300, 300, 150, 250, "green")
+    retangulo(-150, 300, 150, 250,"white")
+    retangulo(0, 300, 150, 250, "red")
+    sleep(2)
+    t.clear()
+
 
 def desenha_holanda():
     retangulo(-300, 300, 600, 150, "#022551")
@@ -90,13 +97,6 @@ def desenha_austria():
     retangulo(-300, 0, 600, 150, "#C71126")
     sleep(2)
     t.clear()
-
-def desenha_austria():
-    retangulo(-300, 300, 600, 150, "#E62722")
-    retangulo(-300, 150, 600, 150,"#F7F7F7")
-    retangulo(-300, 0, 600, 150, "#E62722")
-    sleep(2)
-    t.clear()
     
 def desenha_colombia():
     retangulo(-300, 300, 600, 200, "#F7C703")
@@ -113,8 +113,8 @@ def desenha_hungria():
     t.clear()
 
 def desenha_polonia():
-    retangulo(-300,150,600,150,"white")
-    retangulo(-300,0,600,150,"red" )
+    retangulo(-300,150,600,225,"white")
+    retangulo(-300,-75,600,225,"red" )
     sleep(2)
     t.clear()
 
@@ -142,7 +142,24 @@ def desenha_Palestina():
     sleep(2)
     t.clear()
 
+def desenha_bahamas():
+    retangulo(-300, 300, 600, 150, "#37a4de")
+    retangulo(-300, 150, 600, 150,"yellow")
+    retangulo(-300, 0, 600, 150, "#37a4de")
+    triangulo(-300, 300, 319, 45, "black")
+    sleep(2)
+    t.clear()
 
+def desenha_japao():
+    retangulo(-300, 300, 600, 450, "white")
+    circulo(0, -10, "red", 90)
+    sleep(2)
+    t.clear()
+
+desenha_polonia()
+desenha_italia()
+desenha_japao()
+desenha_bahamas()
 desenha_Palestina()
 desenha_EmiArab()
 desenha_niger()
@@ -155,6 +172,6 @@ desenha_iemen()
 desenha_austria()
 desenha_colombia()
 desenha_hungria()
-desenha_polonia()
+
 
 mainloop()
